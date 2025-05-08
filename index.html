@@ -74,6 +74,20 @@
         </div>
     </section>
 
+    <section id="comparison" class="section">
+        <div class="container">
+            <h2>Before & After Comparison</h2>
+            <div class="comparison-slider">
+                <div class="comparison-container">
+                    <img src="assets/before.gif" alt="Before" class="comparison-img comparison-img-before">
+                    <img src="assets/after.gif" alt="After" class="comparison-img comparison-img-after">
+                    <div class="comparison-handle"></div>
+                </div>
+                <p class="comparison-caption">Drag the handle to compare the before and after images.</p>
+            </div>
+        </div>
+    </section>
+
     <section id="how-it-works" class="section">
         <div class="container">
             <h2>How It Works</h2>
@@ -140,5 +154,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    // Simple image comparison slider JS
+    window.addEventListener('DOMContentLoaded', function() {
+        const container = document.querySelector('.comparison-container');
+        const beforeImg = document.querySelector('.comparison-img-before');
+        const handle = document.querySelector('.comparison-handle');
+        if (!container || !beforeImg || !handle) return;
+        let dragging = false;
+        const setPosition = (x) => {
+            const rect = container.getBoundingClientRect();
+            let pos = Math.max(0, Math.min(x - rect.left, rect.width));
+            beforeImg.style.clipPath = `inset(0 ${rect.width - pos}px 0 0)`;
+            handle.style.left = `${pos}px`;
+        };
+        handle.addEventListener('mousedown', (e) => { dragging = true; });
+        window.addEventListener('mouseup', () => { dragging = false; });
+        window.addEventListener('mousemove', (e) => {
+            if (dragging) setPosition(e.clientX);
+        });
+        // Touch support
+        handle.addEventListener('touchstart', (e) => { dragging = true; });
+        window.addEventListener('touchend', () => { dragging = false; });
+        window.addEventListener('touchmove', (e) => {
+            if (dragging && e.touches[0]) setPosition(e.touches[0].clientX);
+        });
+        // Initial position
+        setPosition(container.offsetWidth / 2);
+        window.addEventListener('resize', () => setPosition(container.offsetWidth / 2));
+    });
+    </script>
 </body>
 </html> 
