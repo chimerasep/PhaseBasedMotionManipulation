@@ -20,9 +20,10 @@
         </div>
     </nav>
 
-    <header class="hero">
+    <header class="hero" style="background-image: url('assets/rollercoaster.jpeg');">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h1>Phase-Based Motion Manipulation</h1>
+            <h1>PHASE BASED<br>MOTION MANIPULATION</h1>
             <p>Reducing Cybersickness in Virtual Reality</p>
         </div>
     </header>
@@ -30,22 +31,22 @@
     <section id="about" class="section">
         <div class="container">
             <h2>About the Project</h2>
-            <p>Our project addresses the critical issue of cybersickness in virtual reality environments by manipulating motion to reduce perceived intensity. By adapting phase-based motion techniques, we aim to create more comfortable and accessible VR experiences for users.</p>
+            <p>Our project implements phase-based motion manipulation in Unity to reduce cybersickness in VR environments. Using Fast Fourier Transform (FFT) and real-time frame processing, we manipulate motion intensity while maintaining visual quality.</p>
             <div class="project-highlights">
                 <div class="highlight">
-                    <i class="fas fa-vr-cardboard"></i>
-                    <h3>VR Focus</h3>
-                    <p>Targeting cybersickness in virtual reality environments through innovative motion manipulation</p>
+                    <i class="fas fa-microchip"></i>
+                    <h3>Compute Shader</h3>
+                    <p>High-performance FFT implementation using Unity Compute Shaders for real-time processing</p>
                 </div>
                 <div class="highlight">
-                    <i class="fas fa-brain"></i>
-                    <h3>User Comfort</h3>
-                    <p>Reducing discomfort, dizziness, and nausea in VR experiences</p>
+                    <i class="fas fa-vr-cardboard"></i>
+                    <h3>Unity Integration</h3>
+                    <p>Seamless integration with Unity's rendering pipeline for VR applications</p>
                 </div>
                 <div class="highlight">
                     <i class="fas fa-code-branch"></i>
-                    <h3>Phase-Based</h3>
-                    <p>Leveraging advanced phase-based motion manipulation techniques</p>
+                    <h3>Complex Processing</h3>
+                    <p>Advanced Complex Steerable Pyramid decomposition for precise motion analysis</p>
                 </div>
             </div>
         </div>
@@ -75,23 +76,39 @@
             <div class="features">
                 <div class="feature">
                     <i class="fas fa-cogs"></i>
-                    <h3>Phase Analysis</h3>
-                    <p>Our system analyzes motion sequences in VR environments by breaking them down into distinct phases, allowing for precise manipulation of movement patterns to reduce perceived intensity.</p>
+                    <h3>Frame Processing</h3>
+                    <p>Our system captures frames from Unity, converts them to YIQ color space, and processes the Y channel using FFT and Complex Steerable Pyramid decomposition for motion manipulation.</p>
                 </div>
                 <div class="feature">
                     <i class="fas fa-tachometer-alt"></i>
-                    <h3>Real-Time Processing</h3>
-                    <p>We process frames from Unity in real-time, ensuring minimal latency while maintaining the quality of motion manipulation for a seamless VR experience.</p>
+                    <h3>FFT & Pyramid</h3>
+                    <p>Custom compute shader implementation of Fast Fourier Transform and Complex Steerable Pyramid for efficient real-time processing of motion data.</p>
                 </div>
                 <div class="feature">
                     <i class="fas fa-code"></i>
-                    <h3>Implementation</h3>
-                    <p>Our solution builds on existing phase-based motion techniques, adapted and optimized for VR environments to reduce cybersickness while preserving immersion.</p>
+                    <h3>Motion Control</h3>
+                    <p>Phase-based manipulation of motion using complex number operations, butterfly algorithms, and steerable pyramid decomposition for precise control.</p>
                 </div>
             </div>
             <div class="technical-details">
-                <h3>Technical Approach</h3>
-                <p>Based on research by Wadhwa et al. (2013) and the Riesz pyramid representation, our system captures frames from Unity, processes them using phase-based techniques, and returns modified frames with reduced motion intensity. This approach helps mitigate the sensory conflict that causes cybersickness while maintaining the immersive nature of VR experiences.</p>
+                <h3>Technical Implementation</h3>
+                <p>Our solution uses a custom MotionMagnificationProcessor in Unity that:</p>
+                <ul>
+                    <li>Captures and processes frames in real-time using compute shaders</li>
+                    <li>Implements 2D FFT using butterfly operations for efficient processing</li>
+                    <li>Utilizes Complex Steerable Pyramid decomposition for multi-scale motion analysis</li>
+                    <li>Manipulates motion through phase difference analysis at multiple scales</li>
+                    <li>Applies anti-aliasing and windowing functions to reduce artifacts</li>
+                    <li>Processes frames in YIQ color space for better motion control</li>
+                </ul>
+                <p>The system maintains high performance through:</p>
+                <ul>
+                    <li>GPU-accelerated compute shader operations</li>
+                    <li>Optimized buffer management for real-time processing</li>
+                    <li>Efficient memory usage with structured buffers</li>
+                    <li>Parallel processing of frame data</li>
+                    <li>Multi-scale motion analysis using Complex Steerable Pyramid</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -105,7 +122,7 @@
             </div>
             <div class="demo-description">
                 <h3>Project Demonstration</h3>
-                <p>Watch our demo video to see how our phase-based motion manipulation system reduces cybersickness in VR environments. The video showcases the system's effectiveness in real-time motion processing and its impact on user comfort.</p>
+                <p>Watch our demo video to see how our phase-based motion manipulation system reduces cybersickness in VR environments. The video showcases the real-time processing capabilities and the effectiveness of our FFT-based motion control system.</p>
             </div>
         </div>
     </section>
