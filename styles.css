@@ -224,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .feature h3 {
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: var(#f7e7c1);
 }
 
 /* Technical Details */
@@ -266,7 +266,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     border-radius: 12px;
-    box-shadow: 0 6px 24px rgba(24, 18, 11, 0.25);
+    box-shadow: 0 6px 24px rgba(218, 132, 33, 0.25);
 }
 
 .demo-description {
