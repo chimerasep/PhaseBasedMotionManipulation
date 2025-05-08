@@ -92,6 +92,38 @@ body {
     color: #2c3e50;
 }
 
+/* Project Highlights */
+.project-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.highlight {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.highlight:hover {
+    transform: translateY(-5px);
+}
+
+.highlight i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.highlight h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
 /* Team section */
 .team-grid {
     display: grid;
@@ -126,37 +158,17 @@ body {
     background: white;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
 }
 
 .feature i {
     font-size: 2.5rem;
     color: #3498db;
     margin-bottom: 1rem;
-}
-
-/* Installation section */
-.installation-steps {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-
-.installation-steps h3 {
-    margin: 1.5rem 0 1rem;
-    color: #2c3e50;
-}
-
-.installation-steps ul {
-    list-style-position: inside;
-    margin-bottom: 1.5rem;
-}
-
-pre {
-    background: #f8f9fa;
-    padding: 1rem;
-    border-radius: 5px;
-    overflow-x: auto;
 }
 
 /* Video section */
@@ -175,6 +187,17 @@ pre {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.demo-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 2rem auto 0;
+}
+
+.demo-description h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
 }
 
 /* Footer */
