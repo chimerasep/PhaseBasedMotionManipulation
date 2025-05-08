@@ -1,28 +1,36 @@
-# Phase-Based Motion Manipulation Project
+# Phase-Based Motion Manipulation for VR Cybersickness Reduction
 
-This is the official website for our Bachelor's Degree Design Project on Phase-Based Motion Manipulation. The project explores innovative approaches to motion manipulation using phase-based techniques.
+This project addresses the critical issue of cybersickness in virtual reality environments by manipulating motion to reduce perceived intensity. By adapting phase-based motion techniques, we aim to create more comfortable and accessible VR experiences for users.
 
 ## Project Overview
 
-Our project focuses on the manipulation of motion through phase-based techniques, offering new possibilities in:
-- Motion analysis and control
-- Robotics applications
-- Animation and motion synthesis
-- Real-time motion manipulation
+Our project focuses on reducing cybersickness in VR through innovative motion manipulation techniques, offering solutions for:
+- Motion intensity reduction in VR environments
+- Real-time frame processing from Unity
+- User comfort enhancement
+- Immersive experience preservation
 
 ## Key Features
 
-- **Phase Analysis**: Advanced algorithms for breaking down motion into distinct phases
-- **Motion Control**: Precise manipulation of movement patterns while maintaining natural characteristics
-- **Real-time Processing**: Efficient implementation for smooth motion manipulation
-- **Research Applications**: Academic research with practical implementations
+- **Phase Analysis**: Advanced algorithms for analyzing and manipulating motion in VR environments
+- **Real-Time Processing**: Efficient frame processing from Unity with minimal latency
+- **Cybersickness Reduction**: Techniques to reduce discomfort, dizziness, and nausea
+- **Research-Based**: Implementation based on Wadhwa et al. (2013) and Riesz pyramid representation
 
 ## Project Sections
 
-1. **About**: Overview of the project and its significance
+1. **About**: Overview of the project and its significance in VR comfort
 2. **Team**: Information about the project team members
-3. **How It Works**: Detailed explanation of the project's methodology
-4. **Demo**: Video demonstration of the system in action
+3. **How It Works**: Detailed explanation of phase-based motion manipulation
+4. **Demo**: Video demonstration of the system's effectiveness
+
+## Technical Approach
+
+Our solution builds on existing phase-based motion techniques, adapted and optimized for VR environments. The system:
+- Captures frames from Unity
+- Processes them using phase-based techniques
+- Returns modified frames with reduced motion intensity
+- Maintains immersive experience while reducing cybersickness
 
 ## Contact
 

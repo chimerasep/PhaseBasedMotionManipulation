@@ -223,6 +223,26 @@ footer {
     color: #3498db;
 }
 
+/* Technical Details */
+.technical-details {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.technical-details h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.technical-details p {
+    text-align: justify;
+    line-height: 1.8;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .navbar .container {
