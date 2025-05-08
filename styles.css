@@ -21,6 +21,7 @@ body {
     color: var(--text-color);
     background: var(--gradient);
     min-height: 100vh;
+    padding-top: 110px; /* Prevent overlap with navbar */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,9 +50,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .container {
+    border: 1.5px solid rgba(247, 200, 115, 0.6); /* accent renginin %60 opaklığı */
+    border-radius: 18px;
+    background: rgba(45, 34, 23, 0.72);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 24px 0 rgba(44,34,23,0.13);
+    padding: 0.7rem 2.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .navbar h1 {
@@ -72,11 +81,29 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-size: 1.1rem;
-    transition: color 0.3s;
+    transition: color 0.3s, border-bottom 0.3s;
+    position: relative;
+    padding-bottom: 4px;
 }
 
 .nav-links a:hover {
     color: var(--accent-color);
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 /* Hero Section */
@@ -120,14 +147,18 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+/* Themed cards for How It Works and others */
 .highlight, .team-member, .feature, .technical-details {
-    background: var(--card-bg);
-    color: var(--text-color);
+    background: #2d2217ee; /* daha koyu ve opak kahverengi */
+    color: #f7e7c1;
     border-radius: 12px;
-    box-shadow: 0 6px 24px rgba(24, 18, 11, 0.25);
+    box-shadow: 0 6px 24px rgba(24, 18, 11, 0.18);
+    border: 1.5px solid #e2b97f33;
     padding: 2rem;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 1.08rem;
+    font-weight: 500;
 }
 
 .highlight:hover, .team-member:hover, .feature:hover {
@@ -136,29 +167,57 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .highlight i, .feature i {
-    font-size: 2.5rem;
     color: var(--accent-color);
-    margin-bottom: 1rem;
+}
+
+.highlight h3, .feature h3 {
+    color: var(--accent-color);
+}
+
+.team-member {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .team-member img {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     object-fit: cover;
     border: 4px solid var(--accent-color);
+    background: #2d2217;
 }
 
 .team-member h3 {
     margin-bottom: 0.5rem;
-    color: var(--primary-color);
+    color: var(--accent-color);
+    border: none;
+    border-radius: 0;
+    background: none;
+    display: block;
+    padding: 0;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.team-member p {
+    margin-top: 0.2rem;
+    color: #f7e7c1;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-align: center;
 }
 
 /* Features */
 .feature {
     padding: 2rem;
-    background: white;
+    background: #2d2217ee;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
