@@ -40,11 +40,6 @@ Our solution builds on existing phase-based motion techniques, adapted and optim
 - Returns modified frames with reduced motion intensity
 - Maintains immersive experience while reducing cybersickness
 
-## Contact
-
-For more information about the project, please contact us through:
-- GitHub: [Project Repository](https://github.com/yourusername/PhaseBasedMotionManipulation)
-- LinkedIn: [Team Profile](https://linkedin.com/in/yourprofile)
 
 ## License
 
