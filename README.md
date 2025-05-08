@@ -2,6 +2,14 @@
 
 This project addresses the critical issue of cybersickness in virtual reality environments by manipulating motion to reduce perceived intensity. By adapting phase-based motion techniques, we aim to create more comfortable and accessible VR experiences for users.
 
+## Team Members
+
+1. **Kenan Gökdeniz Acet**
+   - Student ID: 2200356034
+
+2. **Emre Can Şahin**
+   - Student ID: 2210356146
+
 ## Project Overview
 
 Our project focuses on reducing cybersickness in VR through innovative motion manipulation techniques, offering solutions for:
