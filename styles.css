@@ -21,7 +21,7 @@ body {
     color: var(--text-color);
     background: var(--gradient);
     min-height: 100vh;
-    padding-top: 110px; /* Prevent overlap with navbar */
+    padding-top: 90px; /* Adjust for navbar on desktop */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -427,7 +427,7 @@ footer {
 
 @media (max-width: 900px) {
     body {
-        padding-top: 60px; /* Reduced padding for mobile */
+        padding-top: 70px; /* Smaller padding for mobile */
     }
     
     .navbar {

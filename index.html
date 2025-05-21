@@ -156,6 +156,33 @@
     </footer>
 
     <script>
+    // Navbar scroll behavior
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbar = document.querySelector('.navbar');
+        let lastScrollTop = 0;
+        let scrollThreshold = 20; // Pixels to scroll before hiding
+        
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Determines scroll direction
+            if (scrollTop > lastScrollTop + scrollThreshold) { 
+                // Scrolling DOWN beyond threshold
+                navbar.classList.add('hidden');
+                lastScrollTop = scrollTop;
+            } else if (scrollTop < lastScrollTop - scrollThreshold) {
+                // Scrolling UP beyond threshold
+                navbar.classList.remove('hidden');
+                lastScrollTop = scrollTop;
+            }
+            
+            // Always show navbar at the top of page
+            if (scrollTop < 10) {
+                navbar.classList.remove('hidden');
+            }
+        });
+    });
+
     // Simple image comparison slider JS
     window.addEventListener('DOMContentLoaded', function() {
         const container = document.querySelector('.comparison-container');
