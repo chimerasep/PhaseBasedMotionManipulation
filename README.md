@@ -41,6 +41,3 @@ Our solution builds on existing phase-based motion techniques, adapted and optim
 - Maintains immersive experience while reducing cybersickness
 
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 
