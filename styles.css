@@ -133,6 +133,332 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 2px 2px 6px rgba(24, 18, 11, 0.5);
 }
 
+/* Hero section enhancements */
+.hero-description {
+    margin-top: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-description p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* Overview section styles */
+.overview-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.overview-content > p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.achievements {
+    margin: 3rem 0;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.achievement {
+    background: #2d2217ee;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 24px rgba(24, 18, 11, 0.18);
+    border: 1.5px solid #e2b97f33;
+}
+
+.achievement i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.achievement h4 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(24, 18, 11, 0.4);
+}
+
+.achievement p {
+    color: #f7e7c1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.challenge-solution {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.challenge, .solution {
+    background: #2d2217ee;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(24, 18, 11, 0.18);
+    border: 1.5px solid #e2b97f33;
+}
+
+.challenge h3, .solution h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.challenge p, .solution p {
+    color: #f7e7c1;
+    line-height: 1.7;
+}
+
+/* Methodology section styles */
+.methodology-content > h3 {
+    color: var(--accent-color);
+    margin: 2rem 0 1rem 0;
+}
+
+.methodology-content > p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    color: #f7e7c1;
+    text-align: center;
+}
+
+.processing-pipeline {
+    margin-top: 3rem;
+}
+
+.pipeline-stages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stage {
+    background: #2d2217ee;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(24, 18, 11, 0.18);
+    border: 1.5px solid #e2b97f33;
+    position: relative;
+}
+
+.stage-number {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: var(--accent-color);
+    color: #2d2217;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.stage h4 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.stage ul {
+    list-style-position: inside;
+    color: #f7e7c1;
+}
+
+.stage li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Implementation section styles */
+.implementation-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.development-phases {
+    margin-top: 2rem;
+}
+
+.phase {
+    background: #2d2217ee;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(24, 18, 11, 0.18);
+    border: 1.5px solid #e2b97f33;
+    margin-bottom: 2rem;
+}
+
+.phase h4 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.phase p {
+    color: #f7e7c1;
+    margin-bottom: 1.5rem;
+}
+
+.phase-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.approach, .challenges, .technical-specs {
+    background: rgba(24, 18, 11, 0.3);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.approach h5, .challenges h5, .technical-specs h5 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.approach ul, .challenges ul, .technical-specs ul {
+    list-style-position: inside;
+    color: #f7e7c1;
+}
+
+.approach li, .challenges li, .technical-specs li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Team section enhancements */
+.team-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.team-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #f7e7c1;
+}
+
+.research-inspiration {
+    background: #2d2217ee;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(24, 18, 11, 0.18);
+    border: 1.5px solid #e2b97f33;
+    margin-top: 3rem;
+}
+
+.research-inspiration h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.research-inspiration p {
+    color: #f7e7c1;
+    line-height: 1.7;
+}
+
+/* Downloads section styles */
+.downloads-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.download-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.category {
+    background: #2d2217ee;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(24, 18, 11, 0.18);
+    border: 1.5px solid #e2b97f33;
+}
+
+.category h3 {
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.download-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(24, 18, 11, 0.3);
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.download-item:hover {
+    background: rgba(247, 200, 115, 0.1);
+}
+
+.download-item i {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-right: 1rem;
+    margin-top: 0.2rem;
+    min-width: 30px;
+}
+
+.item-info h4 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.item-info p {
+    color: #f7e7c1;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.download-link {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.download-link:hover .download-item {
+    background: rgba(247, 200, 115, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Footer enhancements */
+footer p:last-of-type {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 0.5rem;
+}
+
 /* Sections */
 .section {
     padding: 5rem 0;
@@ -486,5 +812,29 @@ footer {
 
     .comparison-slider, .comparison-container {
         max-width: 98vw;
+    }
+
+    .achievement-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .challenge-solution {
+        grid-template-columns: 1fr;
+    }
+    
+    .pipeline-stages {
+        grid-template-columns: 1fr;
+    }
+    
+    .phase-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .download-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-description p {
+        font-size: 1rem;
     }
 } 
