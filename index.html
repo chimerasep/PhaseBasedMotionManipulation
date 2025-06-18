@@ -15,7 +15,8 @@
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#methodology">Methodology</a></li>
                 <li><a href="#implementation">Implementation</a></li>
-                <li><a href="#comparison">Results</a></li>
+                <li><a href="#comparison">Comparison</a></li>
+                <li><a href="#results">Results</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#downloads">Downloads</a></li>
             </ul>
@@ -249,6 +250,31 @@
                         <div class="video-comparison-handle"></div>
                     </div>
                     <p class="comparison-caption">Drag the handle to compare</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="results" class="section">
+        <div class="container">
+            <h2>Results & Discussion</h2>
+            <div class="results-content">
+                <div class="table-section">
+                    <div class="table-container">
+                        <p>To objectively measure the efficacy of our motion suppression algorithms, we conducted a comprehensive dense optical flow analysis. This technique computes motion vectors for each pixel between consecutive frames, allowing us to quantify the total magnitude of visual motion presented to the user. We compared our two primary approaches—a direct FFT method with bandpass filtering (Non-Pyramid) and a Steerable Pyramid method—against the unprocessed baseline footage.
+                            The results, summarized in Table 1, demonstrate a profound reduction in motion across all tested configurations.
+                            </p>
+                        <img src="assets/table.png" alt="Table 1: Comparative Optical Flow Analysis of Motion Suppression Techniques" class="results-table">
+                        <p class="table-caption">Table 1: Comparative Optical Flow Analysis of Motion Suppression Techniques</p>
+                    </div>
+                </div>
+                
+                <div class="discussion-section">
+                    <h3>Discussion</h3>
+                    <p>The primary finding is that all tested methods were highly effective, achieving a motion magnitude reduction between 70% and 73%. This is a substantial decrease in optical flow, providing strong quantitative evidence that the core phase-manipulation technique successfully suppresses the visual motion signals responsible for the sensory conflict that causes cybersickness.
+                        <br>
+                        Numerically, the 4-level Steerable Pyramid approach (0.191-0.45 Freq) achieved the highest raw motion reduction at 73.3%. However, as will be discussed next, this marginal numerical superiority came at a significant cost to visual quality and performance stability. The non-pyramid methods provided a robust and stable reduction of ~71%, positioning them as highly viable candidates.
+                    </p>
                 </div>
             </div>
         </div>

@@ -1019,4 +1019,73 @@ footer {
     color: var(--accent-color);
     margin-bottom: 2rem;
     text-align: center;
+}
+
+/* Results & Discussion section styles */
+.results-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.table-section {
+    margin-bottom: 3rem;
+}
+
+.table-container {
+    background: #2d2217ee;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(24, 18, 11, 0.18);
+    border: 1.5px solid #e2b97f33;
+    text-align: center;
+}
+
+.results-table {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+.table-caption {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.discussion-section {
+    background: #2d2217ee;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(24, 18, 11, 0.18);
+    border: 1.5px solid #e2b97f33;
+}
+
+.discussion-section h3 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.discussion-section p {
+    color: #f7e7c1;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* Mobile responsiveness for results section */
+@media (max-width: 900px) {
+    .table-container,
+    .discussion-section {
+        padding: 1.5rem;
+    }
+    
+    .discussion-section p {
+        font-size: 1rem;
+        text-align: left;
+    }
 } 
